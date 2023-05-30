@@ -18,31 +18,42 @@ public class ListOefening {
         clubNames.add("FC Twente");
 
         // Vraag -1: Maak een methode die als taak heeft om de list per regel uit te printen.
+        System.out.println(clubNames);
 
+        for (String clubName : clubNames) {
+            System.out.println(clubName);
+        }
         // Vraag 0: Maak een methode die als taak heeft om de list uit te printen: positie + inhoud.
         // Bovenstaande list zou dan dit zijn:
         // 0 - Ajax
         // 1 - PSv
         // etc...
+        for (int i = 0; i < clubNames.toArray().length; i++) {
+            for (String clubName : clubNames) {
+                System.out.println(i + "-" + clubName);
+            }
+            // Vraag 1: Maak een methode die checkt of een club al in de lijst zit en voeg deze anders toe.
 
-        // Vraag 1: Maak een methode die checkt of een club al in de lijst zit en voeg deze anders toe.
+            // Vraag 2: Maak een methode die de positie van de club in de lijst teruggeeft.
 
-        // Vraag 2: Maak een methode die de positie van de club in de lijst teruggeeft.
-
-        // Vraag 3: Maak een methode die de lijst alfabetisch sorteert. Wanneer Ajax niet op positie 1 staat, moeten de
-        // clubs die voor Ajax staan verwijderd worden.
-        // We voegen nog wat clubs toe om de code te kunnen testen.
-        clubNames.add("AA Aachen");
-        clubNames.add("AFC Amsterdam");
-        clubNames.add("AFC");
-
-
-        // Vraag 4: Kun je hetzelfde doen als hierboven, maar PSV moet dan laatste zijn.
-        clubNames.add("Zlotty FC");
-        clubNames.add("SC Eindhoven");
+            // Vraag 3: Maak een methode die de lijst alfabetisch sorteert. Wanneer Ajax niet op positie 1 staat, moeten de
+            // clubs die voor Ajax staan verwijderd worden.
+            // We voegen nog wat clubs toe om de code te kunnen testen.
+            clubNames.add("AA Aachen");
+            clubNames.add("AFC Amsterdam");
+            clubNames.add("AFC");
 
 
+            // Vraag 4: Kun je hetzelfde doen als hierboven, maar PSV moet dan laatste zijn.
+            clubNames.add("Zlotty FC");
+            clubNames.add("SC Eindhoven");
+
+
+        }
 
     }
 
+    static void printClubName(String name) {
+        System.out.println(name);
+    }
 }
